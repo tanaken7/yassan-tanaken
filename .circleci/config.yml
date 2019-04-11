@@ -10,14 +10,6 @@ jobs:
           name: Install npm
           command: npm install
 
-      - run:
-          name: Type check
-          command: npm run type-check
-      
-      - run:
-          name: Tslint
-          command: npm run tslint
-
 
 workflows:
   version: 2
