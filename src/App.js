@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         Yassan!<br />
-        Purchased?<br />
+        Tanaken!<br />
         <textarea onChange={(e) => (this.handleChange(e.target.value))}></textarea>
         <div>
           {this.state.text}
