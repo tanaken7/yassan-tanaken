@@ -11,7 +11,7 @@ jobs:
             - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
             - node-v1-{{ .Branch }}-
             - node-v1-
-          paths: ~/usr/local/lib/node_modules
+          paths: /home/circleci/project/node_modules
 
       - run:
           name: Install npm
@@ -19,7 +19,7 @@ jobs:
 
       - save_cache:
           key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
-          paths: ~/usr/local/lib/node_modules
+          paths: /home/circleci/project/node_modules
 
 workflows:
   version: 2
